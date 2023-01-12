@@ -2,7 +2,8 @@
 ### Memory Management in Python
 - Memory allocation can be defined as allocating a block of space in the computer memory to a program.
 
-# Garbage Collection: Garbage collection is a process in which the interpreter frees up the memory when not in use to make it available for other objects.
+# Garbage Collection:
+- Garbage collection is a process in which the interpreter frees up the memory when not in use to make it available for other objects.
 - Assume a case where no reference is pointing to an object in memory i.e. it is not in use so, the virtual machine has a garbage collector that automatically deletes that object from the heap memory.
 
 # Reference Counting:
