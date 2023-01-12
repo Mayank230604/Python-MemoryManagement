@@ -9,7 +9,7 @@
 - Reference counting works by counting the number of times an object is referenced by other objects in the system. When references to an object are removed, the reference count for an object is decremented. When the reference count becomes zero, the object is deallocated.
 - Example: Let’s suppose there are two or more variables that have the same value, so, what Python virtual machine does is, rather than creating another object of the same value in the private heap, it actually makes the second variable point to that originally existing value in the private heap. Therefore, in the case of classes, having a number of references may occupy a large amount of space in the memory, in such a case referencing counting is highly beneficial to preserve the memory to be available for other objects.
 
-Example:
+# Example:
           x = 10
 When x = 10 is executed an integer object 10 is created in memory and its reference is assigned to variable x, this is because everything is object in Python.
 
@@ -48,7 +48,7 @@ So now x refer to a new object x and the link between x and 10 disconnected but 
    The allocation happens on contiguous blocks of memory. We call it stack memory allocation because the allocation happens in the function call stack. The size of memory to be allocated is known to the compiler and whenever a function is called, its variables get memory allocated on the stack.
    It is the memory that is only needed inside a particular function or method call. When a function is called, it is added onto the program’s call stack. Any local memory assignments such as variable initializations inside the particular functions are stored temporarily on the function call stack, where it is deleted once the function returns, and the call stack moves on to the next task. This allocation onto a contiguous block of memory is handled by the compiler using predefined routines, and developers do not need to worry about it.
   
- Example:
+# Example:
      def func():
 		
 	# All these variables get memory
@@ -60,7 +60,7 @@ So now x refer to a new object x and the link between x and 10 disconnected but 
 ## Work of Heap Memory
   The memory is allocated during the execution of instructions written by programmers. Note that the name heap has nothing to do with the heap data structure. It is called heap because it is a pile of memory space available to programmers to allocated and de-allocate. The variables are needed outside of method or function calls or are shared within multiple functions globally are stored in Heap memory.
   
-  Example:
-  # This memory for 10 integers
-  # is allocated on heap.
+  # Example:
+  - This memory for 10 integers
+  - is allocated on heap.
     a = [0]*10
